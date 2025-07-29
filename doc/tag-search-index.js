@@ -1,0 +1,1 @@
+tagSearchIndex = [{"l":"Hanbat University Special Lecture - Practice Example","h":"class App","d":"Section","u":"App.html#hanbat-university-special-lecture---practice-example-heading"}];updateSearchResults();
