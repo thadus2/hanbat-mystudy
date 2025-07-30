@@ -2,13 +2,14 @@
 
 package org.example.myapp;
 
-import com.google.common.base.Joiner;
-import org.example.util.Utils;
+import java.util.Scanner;
 
 public class App {
   public static void main(String[] args) {
-    Utils.printMessage("hello, world");
-    String message = Joiner.on(", ").join("hello", "world");
-    Utils.printMessage(message);
+    Scanner scanner = new Scanner(System.in);
+    System.out.print("이름? ");
+    String name = scanner.nextLine();
+    System.out.printf("안녕하세요 %s 님!\n", name);
+    scanner.close();
   }
 }

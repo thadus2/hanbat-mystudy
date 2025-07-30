@@ -1,15 +1,15 @@
 plugins {
     id 'application'
+    // id 'java'
 }
 
 repositories {
-    mavenCentral()
+    mavenCentral() // 의존 라이브러리 다운로드 받을 중앙 저장소 서버의 주소를 지정.
 }
 
 dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter:5.12.1'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
-    implementation 'com.google.guava:guava:33.4.5-jre'
 }
 
 java {
@@ -28,4 +28,8 @@ jar {
 
 tasks.named('test') {
     useJUnitPlatform()
+}
+
+tasks.named('run') {
+    standardInput = System.in
 }
